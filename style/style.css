@@ -1,0 +1,84 @@
+/* GENERAL STYLING */
+/* Apply to everything */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Select all text except for the p element */
+h2,
+h3,
+li,
+p {
+    color: #F4F0EA;
+}
+
+/* BODY */
+/* body element */
+body {
+    height: 100vh;
+    background-image: url("../img/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(42, 57, 80);
+}
+/* general styling for each section */
+header,
+main,
+footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Style div with class of wrapper */
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(53,73,78, 0.8);
+    border: 5px solid rgba(9,28,37, 0.6);
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* header section and background img */
+header {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9,28,37, 0.6);
+}
+h1 {
+    font-size: 300%;
+    color: white;
+    filter: drop-shadow(0 0 10px black);
+    text-align: center;
+}
+
+/* Image filter when hovered */
+img {
+    transition: ease 0.5s;
+    width: 10%;
+    height: 10%;
+    min-width: 100px;
+}
+img:hover {
+    filter: drop-shadow(0 0 50px green) invert(100%);
+    transition: ease 2s;
+}
+
+/* Every odd positioned bullet point */
+li:nth-of-type(odd) {
+    font-weight: 600;
+}
+
+/* Styling on element with id emphasize */
+#emphasize {
+    font-size: 40px;
+    font-weight: 1000;
+}
